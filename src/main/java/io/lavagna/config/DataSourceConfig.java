@@ -40,7 +40,8 @@ public class DataSourceConfig {
 	    return new LavagnaEnvironment(environment);
     }
 
-	@Bean(destroyMethod = "close")
+	// @Bean(destroyMethod = "close")
+	@Bean
 	public DataSource getDataSource(LavagnaEnvironment env) throws URISyntaxException {
 
 		HikariDataSource dataSource = new HikariDataSource();
