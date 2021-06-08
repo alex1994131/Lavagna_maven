@@ -111,6 +111,7 @@ public class DataSourceConfig {
         dbUri.getHost(),
         dbUri.getPort(),
         dbUri.getPath()
+        // "SslMode=none;"
       )
     );
   }
